@@ -1,0 +1,57 @@
+.hero-section {
+  background-image: url("/path/to/your/background/image.jpg"); // Update with your image path
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .hero-content {
+    background: rgba(0, 0, 0, 0.5); // Semi-transparent background
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    .form-group label {
+      color: #fff;
+    }
+
+    .form-control {
+      background: rgba(255, 255, 255, 0.8);
+      border: none;
+    }
+
+    .btn-primary {
+      background-color: #2846a8; // Dark Blue
+      border-color: #2846a8;
+      &:hover {
+        background-color: #1d3691; // Slightly darker shade for hover
+        border-color: #1d3691;
+      }
+    }
+  }
+}
+.hero-bg {
+  background-image: url("https://cdn.wallpapersafari.com/64/46/9l7ftA.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px !important;
+  @media (max-width: 768px) {
+    margin-top: -40px !important;
+  }
+  p {
+    font-size: 13px;
+    color: #fff;
+  }
+  h3 {
+    color: #fff;
+  }
+  #myform {
+    background-color: rgba(31, 31, 31, 0.8);
+    border: rgb(31, 31, 31) !important;
+  }
+}

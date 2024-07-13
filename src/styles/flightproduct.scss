@@ -1,0 +1,142 @@
+.flight-table {
+    width: 100%;
+    margin: 20px auto;
+    
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    @media (max-width: 768px) {
+      padding: 10px;
+    }
+    @media (min-width: 768px) {
+        padding: 10px  50px;
+        background-color: rgba(41, 34, 230, 0.1) !important;
+
+      }
+  }
+  
+  .flight-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+   .flight-card {
+      width: 30%;
+      margin: 10px;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+      @media (max-width: 768px) {
+        width: 45%;
+      }
+  
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+  
+     .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+  
+        h3 {
+          font-weight: bold;
+          margin: 0;
+        }
+  
+        p {
+          margin: 0;
+          font-size: 14px;
+          color: #666;
+        }
+      }
+  
+     .card-body {
+        padding: 20px;
+  
+        p {
+          margin-bottom: 10px;
+          font-size: 14px;
+          color: #666;
+        }
+      }
+  
+     .card-footer {
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-top: 1px solid #ddd;
+  
+       .contact-button {
+          background-color: #337ab7;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          font-size: 14px;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #23527c;
+          }
+        }
+      }
+    }
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+  
+    th {
+      background-color: #f9f9f9;
+    }
+  
+    td {
+      vertical-align: top;
+    }
+  
+   .airline-logo {
+      width: 20px;
+      height: 20px;
+      margin: 0 10px;
+    }
+  
+   .contact-button {
+      background-color: #337ab7;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 10px;
+  
+      &:hover {
+        background-color: #23527c;
+      }
+    }
+  }
+
+
+  .contact-button {
+    background-color: #549bd9;
+    color: #fff;
+    border: none;
+    padding: 10px 40px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: #23527c;
+    }
+  }
+
+  

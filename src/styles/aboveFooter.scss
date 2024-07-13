@@ -1,0 +1,12 @@
+.getintouch {
+  p {
+    font-size: 14px;
+    color: black;
+  }
+  @media (max-width: 768px) {
+    padding: 10px 40px;
+  }
+  @media (min-width: 768px) {
+    padding: 40px 80px;
+  }
+}
