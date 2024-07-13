@@ -3,37 +3,49 @@ import axios from "axios";
 import { motion } from "framer-motion";
 
 interface FormData {
-  destination:string;
-  checkIn:string;
-  checkOut:string;
-  adults:string;
-  childrens:string;
-  email:string;
-  starRating:string;
+  destination: string;
+  checkIn: string;
+  checkOut: string;
+  adults: string;
+  childrens: string;
+  email: string;
+  starRating: string;
 }
 
 const Hero: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
-    destination:'',
-      email:'',
-      checkIn:'',
-      checkOut:'',
-      childrens:'',
-      starRating:'',
-      adults:'',
+    destination: "",
+    email: "",
+    checkIn: "",
+    checkOut: "",
+    childrens: "",
+    starRating: "",
+    adults: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    setFormData((prevData) => ({ ...prevData, [e.target.name]: e.target.value }));
+  // @ts-ignore
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >
+  ) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [e.target.name]: e.target.value,
+    }));
   };
-console.log("_________", formData)
+  console.log("_________", formData);
+  // @ts-ignore
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4040/api/v1/flight/new', formData);
+      const response = await axios.post(
+        "http://localhost:4040/api/v1/flight/new",
+        formData
+      );
       console.log(response.data);
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.error("Error submitting form:", error);
     }
   };
 
