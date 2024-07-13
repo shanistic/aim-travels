@@ -44,15 +44,15 @@ const App = () => {
             <Route path="/hajj-umrah" element={<Hajjumrah />} />
             <Route path="/vacations" element={<Vacations />} />
             {/* Admin Route  */}
-            <Route path="/admin/dashboard" element={<Dashboard />} />
-            <Route path="/admin/product" element={<Products />} />
-            <Route path="/admin/customer" element={<Customers />} />
-            <Route path="/admin/transaction" element={<Transaction />} />
             <Route
             // element={
             //   <ProtectedRoute isAuthenticated={true} adminRoute={true} isAdmin={true} />
             // }
             >
+              <Route path="/admin/dashboard" element={<Dashboard />} />
+              <Route path="/admin/product" element={<Products />} />
+              <Route path="/admin/customer" element={<Customers />} />
+              <Route path="/admin/transaction" element={<Transaction />} />
               {/* Charts */}
               {/* <Route path="/admin/chart/bar" element={<Barcharts />} />
   <Route path="/admin/chart/pie" element={<Piecharts />} />

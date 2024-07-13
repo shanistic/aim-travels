@@ -1,15 +1,15 @@
-import Hero from "../components/herohajjumrah"
-import ProductGridhajj from "../components/pakagesproduct"
-import OurServices from "../components/services"
+import Hero from "../components/herohajjumrah";
+import ProductGridhajj from "../components/pakagesproduct";
+// import OurServices from "../components/services";
 
 const Hajjumrah = () => {
   return (
     <>
-      <Hero/>
-      <OurServices/>
-      <ProductGridhajj/>
+      <Hero />
+      {/* <OurServices/> */}
+      <ProductGridhajj />
     </>
-  )
-}
+  );
+};
 
-export default Hajjumrah
+export default Hajjumrah;
