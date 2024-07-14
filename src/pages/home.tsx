@@ -16,9 +16,9 @@ const Home = () => {
       <ProductGridhajj />
       <HotelTable />
       <ProductGrid />
-      <Link to={"/admin/dashboard"}>
+      <a href="/admin/dashboard">
         <button className="contact-button m-3"> Login </button>
-      </Link>
+      </a>
 
       <ContactForm />
     </>
