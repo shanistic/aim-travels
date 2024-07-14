@@ -5,7 +5,7 @@ import HotelTable from "../components/hotelproduct";
 import ProductGridhajj from "../components/pakagesproduct";
 import ProductGrid from "../components/pakagevacation";
 import ContactForm from "../components/aboveFooter";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -16,9 +16,9 @@ const Home = () => {
       <ProductGridhajj />
       <HotelTable />
       <ProductGrid />
-      <a href="/admin/dashboard">
-        <button className="contact-button m-3"> Login </button>
-      </a>
+      <Link to={"/admin/dashboard"}>
+        <button className="contact-button m-3"> Dashboard </button>
+      </Link>
 
       <ContactForm />
     </>
